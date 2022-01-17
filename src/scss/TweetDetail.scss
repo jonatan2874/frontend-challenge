@@ -1,0 +1,42 @@
+.TweetDetail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerDetail{
+    background-color: #008abf;
+    position: absolute;
+    width: 218px;
+    height: 22px;
+    border-radius: 5px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+    color: #FFF;
+    transition: height 1s;
+    z-index: 1;
+
+    .detail{
+        visibility: hidden;
+    }
+
+    .ico{
+        background-color: red;
+        border-radius: 100px 100px 0 0;
+        width: 100px;
+        height: 50px;
+
+    }
+}
+
+.show{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .detail{
+        visibility:visible;
+        overflow: hidden;
+    }
+}
